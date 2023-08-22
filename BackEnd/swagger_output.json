@@ -1,0 +1,472 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "REST API",
+        "description": ""
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/pdf/test": {
+            "get": {
+                "description": "",
+                "tags": [
+                    "PDF"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "message": {
+                        "description": "working fine"
+                    }
+                }
+            }
+        },
+        "/pdf/generate-pdf-from-html": {
+            "post": {
+                "description": "",
+                "tags": [
+                    "PDF"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "html": {
+                                    "example": "any"
+                                },
+                                "css": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/pdf/generate-pdf-from-doc": {
+            "post": {
+                "description": "",
+                "tags": [
+                    "PDF"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "file": {
+                                    "example": "docx"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/pdf/merge-pdf": {
+            "post": {
+                "description": "",
+                "tags": [
+                    "PDF"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "file": {
+                                    "example": [
+                                        "pdf"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/pdf/get-data": {
+            "get": {
+                "description": "",
+                "tags": [
+                    "PDF"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/pdf/full-dossier": {
+            "post": {
+                "description": "",
+                "tags": [
+                    "PDF"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "profileInfo": {
+                                    "example": {
+                                        "headerData": "json"
+                                    }
+                                },
+                                "reference": {
+                                    "example": {
+                                        "headerData": "json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/pdf/express-dossier": {
+            "post": {
+                "description": "",
+                "tags": [
+                    "PDF"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "profileInfo": {
+                                    "example": {
+                                        "headerData": "json"
+                                    }
+                                },
+                                "reference": {
+                                    "example": {
+                                        "headerData": "json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/salesforce/get-access-token": {
+            "get": {
+                "description": "",
+                "tags": [
+                    "salesforce"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/salesforce/get-profile": {
+            "post": {
+                "description": "",
+                "tags": [
+                    "salesforce"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "instance_url": {
+                                    "example": "url"
+                                },
+                                "access_token": {
+                                    "example": "access_token"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/salesforce/get-objects": {
+            "post": {
+                "description": "",
+                "tags": [
+                    "salesforce"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "instance_url": {
+                                    "example": "url"
+                                },
+                                "access_token": {
+                                    "example": "access_token"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/salesforce/get-accounts-list": {
+            "post": {
+                "description": "",
+                "tags": [
+                    "salesforce"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "instance_url": {
+                                    "example": "url"
+                                },
+                                "access_token": {
+                                    "example": "access_token"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/salesforce/get-account-detail": {
+            "post": {
+                "description": "",
+                "tags": [
+                    "salesforce"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "instance_url": {
+                                    "example": "url"
+                                },
+                                "accountId": {
+                                    "example": "accountId"
+                                },
+                                "access_token": {
+                                    "example": "access_token"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/salesforce/get-contacts": {
+            "post": {
+                "description": "",
+                "tags": [
+                    "salesforce"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "instance_url": {
+                                    "example": "url"
+                                },
+                                "access_token": {
+                                    "example": "access_token"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/salesforce/get-contact-detail": {
+            "post": {
+                "description": "",
+                "tags": [
+                    "salesforce"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "instance_url": {
+                                    "example": "url"
+                                },
+                                "contactId": {
+                                    "example": "contactId"
+                                },
+                                "access_token": {
+                                    "example": "access_token"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/salesforce/update-contact": {
+            "put": {
+                "description": "",
+                "tags": [
+                    "salesforce"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "instance_url": {
+                                    "example": "url"
+                                },
+                                "contactId": {
+                                    "example": "contactId"
+                                },
+                                "form_data": {
+                                    "example": "form_data"
+                                },
+                                "access_token": {
+                                    "example": "access_token"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/salesforce/update-account": {
+            "put": {
+                "description": "",
+                "tags": [
+                    "salesforce"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "instance_url": {
+                                    "example": "url"
+                                },
+                                "accountId": {
+                                    "example": "accountId"
+                                },
+                                "form_data": {
+                                    "example": {"LastName":"any"}
+                                },
+                                "access_token": {
+                                    "example": "access_token"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    }
+}

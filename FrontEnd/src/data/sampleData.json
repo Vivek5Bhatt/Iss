@@ -1,0 +1,956 @@
+{
+  "profileInfo": {
+    "headerData": {
+      "name": "Stephen Castagneto",
+      "email": "cdenmark@gvaschools.org",
+      "phone": "+1-303-513-7754"
+    },
+    "positionData": {
+      "experience": "Advanced Placement (AP), Common Core, IB MYP, STEM, United States, United States of America",
+      "date": "Oct 31 2022",
+      "positions": [
+        {
+          "department": "Social Studies",
+          "subject": "College Level/Advanced",
+          "years": "7"
+        },
+        {
+          "department": "Science",
+          "subject": "Economics",
+          "years": "25"
+        },
+        {
+          "department": "Math",
+          "subject": "Geography HS",
+          "years": "25"
+        },
+        {
+          "department": "English",
+          "subject": "Social Studies - HS",
+          "years": "25"
+        },
+        {
+          "department": "Social Studies",
+          "subject": "Social Studies - MS",
+          "years": "5"
+        },
+        {
+          "department": "Social Studies",
+          "subject": "World History HS",
+          "years": "25"
+        }
+      ]
+    },
+    "basicInfo": {
+      "heading": "Basic Information",
+      "name": "Stephen Castagneto",
+      "date": "Jul 24 1951",
+      "country": "United States",
+      "residence": "United States",
+      "relationship": "Married",
+      "citizenship": "United States",
+      "language": "French",
+      "gender": "Male",
+      "bringing": "No",
+      "passport": "No",
+      "criminal": "No"
+    },
+    "carrier": [
+      {
+        "jobTitle": "teacher(post-secondary-social studies)",
+        "nameofSchool": "International School of Myanmar",
+        "startDate": "Jul 14 2017",
+        "finishDate": "Jun 01 2018",
+        "jobType": "Full Time",
+        "curriculum": "Advanced Placement",
+        "city": "Yangon",
+        "country": "Myanmar (Burma)",
+        "additional": "Model United Nations"
+      },
+      {
+        "jobTitle": "Adjunct Professor",
+        "nameofSchool": "American University of Yangon",
+        "startDate": "Nov 30 2017",
+        "finishDate": "Mar 15 2018",
+        "jobType": "Part Time",
+        "curriculum": "United States",
+        "city": "Yangon",
+        "country": "Myanmar (Burma)",
+        "reason": "Leaving"
+      },
+      {
+        "jobTitle": "teacher (Social Studies-English/9-12)",
+        "nameofSchool": "Stamford Public Schools",
+        "startDate": "Sep 01 2001",
+        "finishDate": "Jun 01 2016",
+        "jobType": "Full Time",
+        "curriculum": "Advanced Placement",
+        "city": "Connecticut",
+        "country": "United States"
+      },
+      {
+        "jobTitle": "teacher (Social Studies-English/9-12)",
+        "nameofSchool": "The Children's Center",
+        "startDate": "Sep 01 2000",
+        "finishDate": "Sep 01 2001",
+        "jobType": "Full Time",
+        "curriculum": "United States of America",
+        "city": "Connecticut",
+        "country": "United States"
+      },
+      {
+        "jobTitle": "teacher (Social Studies/9-12)",
+        "nameofSchool": "Wilton Public Schools",
+        "startDate": "Jan 01 2000",
+        "finishDate": "Aug 01 2000",
+        "jobType": "Full Time",
+        "curriculum": "Common Core",
+        "country": "United States"
+      },
+      {
+        "jobTitle": "teacher (carpentry)",
+        "nameofSchool": "Wright Vo. Tech. HS",
+        "startDate": "Sep 01 1999",
+        "finishDate": "Jan 01 2000",
+        "jobType": "Full Time",
+        "curriculum": "Common Core",
+        "city": "Connecticut",
+        "country": "United States"
+      },
+      {
+        "jobTitle": "teacher(post-secondary-social studies)",
+        "nameofSchool": "International School of Myanmar",
+        "startDate": "Jul 14 2017",
+        "finishDate": "Jun 01 2018",
+        "jobType": "Full Time",
+        "curriculum": "Advanced Placement",
+        "city": "Yangon",
+        "country": "Myanmar (Burma)",
+        "additional": "Model United Nations"
+      },
+      {
+        "jobTitle": "Adjunct Professor",
+        "nameofSchool": "American University of Yangon",
+        "startDate": "Nov 30 2017",
+        "finishDate": "Mar 15 2018",
+        "jobType": "Part Time",
+        "curriculum": "United States",
+        "city": "Yangon",
+        "country": "Myanmar (Burma)",
+        "reason": "Leaving"
+      },
+      {
+        "jobTitle": "teacher (Social Studies-English/9-12)",
+        "nameofSchool": "Stamford Public Schools",
+        "startDate": "Sep 01 2001",
+        "finishDate": "Jun 01 2016",
+        "jobType": "Full Time",
+        "curriculum": "Advanced Placement",
+        "city": "Connecticut",
+        "country": "United States"
+      },
+      {
+        "jobTitle": "teacher (Social Studies-English/9-12)",
+        "nameofSchool": "The Children's Center",
+        "startDate": "Sep 01 2000",
+        "finishDate": "Sep 01 2001",
+        "jobType": "Full Time",
+        "curriculum": "United States of America",
+        "city": "Connecticut",
+        "country": "United States"
+      },
+      {
+        "jobTitle": "teacher (Social Studies/9-12)",
+        "nameofSchool": "Wilton Public Schools",
+        "startDate": "Jan 01 2000",
+        "finishDate": "Aug 01 2000",
+        "jobType": "Full Time",
+        "curriculum": "Common Core",
+        "country": "United States"
+      },
+      {
+        "jobTitle": "teacher (carpentry)",
+        "nameofSchool": "Wright Vo. Tech. HS",
+        "startDate": "Sep 01 1999",
+        "finishDate": "Jan 01 2000",
+        "jobType": "Full Time",
+        "curriculum": "Common Core",
+        "city": "Connecticut",
+        "country": "United States"
+      }
+    ],
+    "certification": {
+      "heading": "Registration / Certification",
+      "title": "Professional Educator / Highly Qualified",
+      "status": "Active",
+      "expiryDate": "Jun 21 2023",
+      "awardedBy": "Colorado",
+      "country": "United States"
+    },
+    "contactDetails": {
+      "heading": "Contact Details",
+      "current": "P.O. Box 154, 600 Main Street #3, Ouray, Colorado, United States, 81427",
+      "permanent": "P.O. Box 154, 600 Main Street #3, Ouray, Colorado, United States, 81427"
+    },
+    "education": {
+      "heading": "Education",
+      "education": [
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971",
+          "organization": "International School of Myanmar",
+          "name": "Chris Denmark",
+          "email": "cdenmark@gvaschools.org",
+          "phone": "+1-303-513-7754",
+          "heading": "Reference Information & Questions",
+          "refereeTitle": "Director",
+          "refereeRole": "Supervisor",
+          "schoolName": "International School of Myanmar",
+          "candidateName": "Stephen Castagneto",
+          "workPeriod": "31 May 2017 - 30 Apr 2018",
+          "refereeEmail": "bryn.gabriel@ismyanmar.com",
+          "refereePhone": "05-9-43106744",
+          "dateofReference": "8 Jul 2021",
+          "jobTitle": "teacher(post-secondary-social studies)",
+          "nameofSchool": "International School of Myanmar",
+          "startDate": "Jul 14 2017",
+          "finishDate": "Jun 01 2018",
+          "jobType": "Full Time",
+          "curriculum": "Advanced Placement",
+          "city": "Yangon",
+          "additional": "Model United Nations"
+        },
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971",
+          "organization": "International School of Myanmar",
+          "name": "Chris Denmark",
+          "email": "cdenmark@gvaschools.org",
+          "phone": "+1-303-513-7754",
+          "heading": "Reference Information & Questions",
+          "refereeTitle": "Director",
+          "refereeRole": "Supervisor",
+          "schoolName": "International School of Myanmar",
+          "candidateName": "Stephen Castagneto",
+          "workPeriod": "31 May 2017 - 30 Apr 2018",
+          "refereeEmail": "bryn.gabriel@ismyanmar.com",
+          "refereePhone": "05-9-43106744",
+          "dateofReference": "8 Jul 2021",
+          "jobTitle": "teacher(post-secondary-social studies)",
+          "nameofSchool": "International School of Myanmar",
+          "startDate": "Jul 14 2017",
+          "finishDate": "Jun 01 2018",
+          "jobType": "Full Time",
+          "curriculum": "Advanced Placement",
+          "city": "Yangon",
+          "additional": "Model United Nations"
+        },
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971",
+          "organization": "International School of Myanmar",
+          "name": "Chris Denmark",
+          "email": "cdenmark@gvaschools.org",
+          "phone": "+1-303-513-7754",
+          "heading": "Reference Information & Questions",
+          "refereeTitle": "Director",
+          "refereeRole": "Supervisor",
+          "schoolName": "International School of Myanmar",
+          "candidateName": "Stephen Castagneto",
+          "workPeriod": "31 May 2017 - 30 Apr 2018",
+          "refereeEmail": "bryn.gabriel@ismyanmar.com",
+          "refereePhone": "05-9-43106744",
+          "dateofReference": "8 Jul 2021",
+          "jobTitle": "teacher(post-secondary-social studies)",
+          "nameofSchool": "International School of Myanmar",
+          "startDate": "Jul 14 2017",
+          "finishDate": "Jun 01 2018",
+          "jobType": "Full Time",
+          "curriculum": "Advanced Placement",
+          "city": "Yangon",
+          "additional": "Model United Nations"
+        },
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971",
+          "organization": "International School of Myanmar",
+          "name": "Chris Denmark",
+          "email": "cdenmark@gvaschools.org",
+          "phone": "+1-303-513-7754",
+          "heading": "Reference Information & Questions",
+          "refereeTitle": "Director",
+          "refereeRole": "Supervisor",
+          "schoolName": "International School of Myanmar",
+          "candidateName": "Stephen Castagneto",
+          "workPeriod": "31 May 2017 - 30 Apr 2018",
+          "refereeEmail": "bryn.gabriel@ismyanmar.com",
+          "refereePhone": "05-9-43106744",
+          "dateofReference": "8 Jul 2021",
+          "jobTitle": "teacher(post-secondary-social studies)",
+          "nameofSchool": "International School of Myanmar",
+          "startDate": "Jul 14 2017",
+          "finishDate": "Jun 01 2018",
+          "jobType": "Full Time",
+          "curriculum": "Advanced Placement",
+          "city": "Yangon",
+          "additional": "Model United Nations"
+        },
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971"
+        },
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971"
+        },
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971"
+        },
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971",
+          "organization": "International School of Myanmar",
+          "name": "Chris Denmark",
+          "email": "cdenmark@gvaschools.org",
+          "phone": "+1-303-513-7754",
+          "heading": "Reference Information & Questions",
+          "refereeTitle": "Director",
+          "refereeRole": "Supervisor",
+          "schoolName": "International School of Myanmar",
+          "candidateName": "Stephen Castagneto",
+          "workPeriod": "31 May 2017 - 30 Apr 2018",
+          "refereeEmail": "bryn.gabriel@ismyanmar.com",
+          "refereePhone": "05-9-43106744",
+          "dateofReference": "8 Jul 2021",
+          "jobTitle": "teacher(post-secondary-social studies)",
+          "nameofSchool": "International School of Myanmar",
+          "startDate": "Jul 14 2017",
+          "finishDate": "Jun 01 2018",
+          "jobType": "Full Time",
+          "curriculum": "Advanced Placement",
+          "city": "Yangon",
+          "additional": "Model United Nations"
+        },
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971",
+          "organization": "International School of Myanmar",
+          "name": "Chris Denmark",
+          "email": "cdenmark@gvaschools.org",
+          "phone": "+1-303-513-7754",
+          "heading": "Reference Information & Questions",
+          "refereeTitle": "Director",
+          "refereeRole": "Supervisor",
+          "schoolName": "International School of Myanmar",
+          "candidateName": "Stephen Castagneto",
+          "workPeriod": "31 May 2017 - 30 Apr 2018",
+          "refereeEmail": "bryn.gabriel@ismyanmar.com",
+          "refereePhone": "05-9-43106744",
+          "dateofReference": "8 Jul 2021",
+          "jobTitle": "teacher(post-secondary-social studies)",
+          "nameofSchool": "International School of Myanmar",
+          "startDate": "Jul 14 2017",
+          "finishDate": "Jun 01 2018",
+          "jobType": "Full Time",
+          "curriculum": "Advanced Placement",
+          "city": "Yangon",
+          "additional": "Model United Nations"
+        },
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971",
+          "organization": "International School of Myanmar",
+          "name": "Chris Denmark",
+          "email": "cdenmark@gvaschools.org",
+          "phone": "+1-303-513-7754",
+          "heading": "Reference Information & Questions",
+          "refereeTitle": "Director",
+          "refereeRole": "Supervisor",
+          "schoolName": "International School of Myanmar",
+          "candidateName": "Stephen Castagneto",
+          "workPeriod": "31 May 2017 - 30 Apr 2018",
+          "refereeEmail": "bryn.gabriel@ismyanmar.com",
+          "refereePhone": "05-9-43106744",
+          "dateofReference": "8 Jul 2021",
+          "jobTitle": "teacher(post-secondary-social studies)",
+          "nameofSchool": "International School of Myanmar",
+          "startDate": "Jul 14 2017",
+          "finishDate": "Jun 01 2018",
+          "jobType": "Full Time",
+          "curriculum": "Advanced Placement",
+          "city": "Yangon",
+          "additional": "Model United Nations"
+        },
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971",
+          "organization": "International School of Myanmar",
+          "name": "Chris Denmark",
+          "email": "cdenmark@gvaschools.org",
+          "phone": "+1-303-513-7754",
+          "heading": "Reference Information & Questions",
+          "refereeTitle": "Director",
+          "refereeRole": "Supervisor",
+          "schoolName": "International School of Myanmar",
+          "candidateName": "Stephen Castagneto",
+          "workPeriod": "31 May 2017 - 30 Apr 2018",
+          "refereeEmail": "bryn.gabriel@ismyanmar.com",
+          "refereePhone": "05-9-43106744",
+          "dateofReference": "8 Jul 2021",
+          "jobTitle": "teacher(post-secondary-social studies)",
+          "nameofSchool": "International School of Myanmar",
+          "startDate": "Jul 14 2017",
+          "finishDate": "Jun 01 2018",
+          "jobType": "Full Time",
+          "curriculum": "Advanced Placement",
+          "city": "Yangon",
+          "additional": "Model United Nations"
+        },
+        {
+          "nameofInstitute": "Name of Institute",
+          "country": "United States",
+          "degreeType": "Associate Degree",
+          "course": "History",
+          "degreeConferred": "Yes",
+          "start_end_date": "Sep 01 1969-Jun 01 1971",
+          "organization": "International School of Myanmar",
+          "name": "Chris Denmark",
+          "email": "cdenmark@gvaschools.org",
+          "phone": "+1-303-513-7754",
+          "heading": "Reference Information & Questions",
+          "refereeTitle": "Director",
+          "refereeRole": "Supervisor",
+          "schoolName": "International School of Myanmar",
+          "candidateName": "Stephen Castagneto",
+          "workPeriod": "31 May 2017 - 30 Apr 2018",
+          "refereeEmail": "bryn.gabriel@ismyanmar.com",
+          "refereePhone": "05-9-43106744",
+          "dateofReference": "8 Jul 2021",
+          "jobTitle": "teacher(post-secondary-social studies)",
+          "nameofSchool": "International School of Myanmar",
+          "startDate": "Jul 14 2017",
+          "finishDate": "Jun 01 2018",
+          "jobType": "Full Time",
+          "curriculum": "Advanced Placement",
+          "city": "Yangon",
+          "additional": "Model United Nations"
+        }
+      ]
+    }
+  },
+  "reference": {
+    "ref": [
+      {
+        "organization": "International School of Myanmar",
+        "name": "Chris Denmark",
+        "refereeTitle": "Director",
+        "email": "cdenmark@gvaschools.org",
+        "phone": "+1-303-513-7754",
+        "startEnd": "Aug 05 2019 - Aug 03 2020"
+      },
+      {
+        "organization": "International School of Myanmar",
+        "name": "Chris Denmark",
+        "refereeTitle": "Director",
+        "email": "cdenmark@gvaschools.org",
+        "phone": "+1-303-513-7754",
+        "startEnd": "Aug 05 2019 - Aug 03 2020"
+      },
+      {
+        "organization": "International School of Myanmar",
+        "name": "Chris Denmark",
+        "refereeTitle": "Director",
+        "email": "cdenmark@gvaschools.org",
+        "phone": "+1-303-513-7754",
+        "startEnd": "Aug 05 2019 - Aug 03 2020"
+      },
+      {
+        "organization": "International School of Myanmar",
+        "name": "Chris Denmark",
+        "refereeTitle": "Director",
+        "email": "cdenmark@gvaschools.org",
+        "phone": "+1-303-513-7754",
+        "startEnd": "Aug 05 2019 - Aug 03 2020"
+      },
+      {
+        "organization": "International School of Myanmar",
+        "name": "Chris Denmark",
+        "refereeTitle": "Director",
+        "email": "cdenmark@gvaschools.org",
+        "phone": "+1-303-513-7754",
+        "startEnd": "Aug 05 2019 - Aug 03 2020"
+      },
+      {
+        "organization": "International School of Myanmar",
+        "name": "Chris Denmark",
+        "refereeTitle": "Director",
+        "email": "cdenmark@gvaschools.org",
+        "phone": "+1-303-513-7754",
+        "startEnd": "Aug 05 2019 - Aug 03 2020"
+      },
+      {
+        "organization": "International School of Myanmar",
+        "name": "Chris Denmark",
+        "refereeTitle": "Director",
+        "email": "cdenmark@gvaschools.org",
+        "phone": "+1-303-513-7754",
+        "startEnd": "Aug 05 2019 - Aug 03 2020"
+      },
+      {
+        "organization": "International School of Myanmar",
+        "name": "Chris Denmark",
+        "refereeTitle": "Director",
+        "email": "cdenmark@gvaschools.org",
+        "phone": "+1-303-513-7754",
+        "startEnd": "Aug 05 2019 - Aug 03 2020"
+      }
+    ]
+  },
+  "referenceBy": [
+    {
+      "headerData": {
+        "name": "Chris Denmark"
+      },
+      "beyondClass": {
+        "heading": "Beyond the Classroom",
+        "description": " Stephen is very easy to work with and will help out in any way he can.",
+        "comments": [
+          {
+            "comment": "Contributes above and beyond classroom responsibilities:",
+            "number": 10
+          },
+          {
+            "comment": "Adapts to new situations:",
+            "number": 10
+          },
+          {
+            "comment": "Communicates effectively with parents/support staff/administrators:",
+            "number": 5
+          },
+          {
+            "comment": "Shows flexibility:",
+            "number": 10
+          },
+          {
+            "comment": "Is responsible and reliable:",
+            "number": 10
+          },
+          {
+            "comment": "Has a good sense of humor:",
+            "number": 10
+          }
+        ]
+      },
+      "general": {
+        "heading": "General",
+        "candidate": "Teaching ability, collaboration with colleagues",
+        "monitoring": "I would like to see him plan more student centered lessons. He does this already, but he could do it more often."
+      },
+      "refInfo": {
+        "heading": "Reference Information & Questions",
+        "refereeTitle": "Director",
+        "refereeRole": "Supervisor",
+        "schoolName": "International School of Myanmar",
+        "candidateName": "Stephen Castagneto",
+        "workPeriod": "31 May 2017 - 30 Apr 2018",
+        "refereeEmail": "bryn.gabriel@ismyanmar.com",
+        "refereePhone": "05-9-43106744",
+        "dateofReference": "8 Jul 2021"
+      },
+      "withInClass": {
+        "heading": "Within the Classroom",
+        "description": "Stephen is the consummate professional. His work experience allows him to teach students in history with a very unique perspective. I have watched students enthralled with his storytelling of experiences he has had.",
+        "comments": [
+          {
+            "comment": "Exhibits knowledge of content/subject area:",
+            "number": 10
+          },
+          {
+            "comment": "Establishes a positive and productive learning environment for students:",
+            "number": 8
+          },
+          {
+            "comment": "Implements creative and stimulating lessons/activities that engage and challenge students:",
+            "number": 9
+          },
+          {
+            "comment": "Shows knowledge of the students' skills/proficiency:",
+            "number": 5
+          },
+          {
+            "comment": "Communicate with students clearly:",
+            "number": 4
+          },
+          {
+            "comment": "Manages student behavior effectively:",
+            "number": 2
+          },
+          {
+            "comment": "Works with colleagues effectively:",
+            "number": 6
+          },
+          {
+            "comment": "Demonstrates appropriate time management and organizational skills:",
+            "number": 9
+          },
+          {
+            "comment": "Demonstrates respect for all students:",
+            "number": 10
+          }
+        ]
+      },
+      "professional": {
+        "heading": "Within the Professional Community",
+        "comments": [
+          {
+            "comment": "Communicates effectively with colleagues:",
+            "number": 9
+          },
+          {
+            "comment": "Communicates effectively with administration:",
+            "number": 10
+          },
+          {
+            "comment": "Contributes to a collaborative and supportive working environment:",
+            "number": 10
+          },
+          {
+            "comment": "Supports school wide initiatives directly and indirectly:",
+            "number": 10
+          },
+          {
+            "comment": "Contributes to positive staff morale:",
+            "number": 10
+          },
+          {
+            "comment": "Meets deadlines:",
+            "number": 9
+          },
+          {
+            "comment": "Continues professional development:",
+            "number": 9
+          },
+          {
+            "comment": "Demonstrates leadership characteristics:",
+            "number": 4
+          }
+        ]
+      },
+      "teachings": {
+        "description": " Stephen is a true veteran teacher with knowledge. The transfer at times is not very differentiated and lecture style. We are a middle school and need him to truly engage our students with instructional practices.",
+        "comments": [
+          {
+            "comment": "Exhibits knowledge of content/subject area:",
+            "number": 10
+          },
+          {
+            "comment": "Establishes a positive and productive learning environment for students:",
+            "number": 8
+          },
+          {
+            "comment": "Implements creative and stimulating lessons/activities that engage and challenge students:",
+            "number": 9
+          },
+          {
+            "comment": "Shows knowledge of the students' skills/proficiency:",
+            "number": 5
+          },
+          {
+            "comment": "Communicate with students clearly:",
+            "number": 4
+          },
+          {
+            "comment": "Manages student behavior effectively:",
+            "number": 2
+          },
+          {
+            "comment": "Works with colleagues effectively:",
+            "number": 6
+          },
+          {
+            "comment": "Demonstrates appropriate time management and organizational skills:",
+            "number": 9
+          },
+          {
+            "comment": "Demonstrates respect for all students:",
+            "number": 10
+          }
+        ]
+      }
+    },
+    {
+      "headerData": {
+        "name": "Stephen Castagneto"
+      },
+      "beyondClass": {
+        "heading": "Beyond the Classroom",
+        "description": " Stephen is very easy to work with and will help out in any way he can.",
+        "comments": [
+          {
+            "comment": "Contributes above and beyond classroom responsibilities:",
+            "number": 10
+          },
+          {
+            "comment": "Adapts to new situations:",
+            "number": 10
+          },
+          {
+            "comment": "Communicates effectively with parents/support staff/administrators:",
+            "number": 5
+          },
+          {
+            "comment": "Shows flexibility:",
+            "number": 10
+          },
+          {
+            "comment": "Is responsible and reliable:",
+            "number": 10
+          },
+          {
+            "comment": "Has a good sense of humor:",
+            "number": 10
+          }
+        ]
+      },
+      "general": {
+        "heading": "General",
+        "candidate": "Teaching ability, collaboration with colleagues",
+        "monitoring": "I would like to see him plan more student centered lessons. He does this already, but he could do it more often."
+      },
+      "refInfo": {
+        "heading": "Reference Information & Questions",
+        "refereeTitle": "Director",
+        "refereeRole": "Supervisor",
+        "schoolName": "International School of Myanmar",
+        "candidateName": "Stephen Castagneto",
+        "workPeriod": "31 May 2017 - 30 Apr 2018",
+        "refereeEmail": "bryn.gabriel@ismyanmar.com",
+        "refereePhone": "05-9-43106744",
+        "dateofReference": "8 Jul 2021"
+      },
+      "withInClass": {
+        "heading": "Within the Classroom",
+        "description": "Stephen is the consummate professional. His work experience allows him to teach students in history with a very unique perspective. I have watched students enthralled with his storytelling of experiences he has had.",
+        "comments": [
+          {
+            "comment": "Exhibits knowledge of content/subject area:",
+            "number": 10
+          },
+          {
+            "comment": "Establishes a positive and productive learning environment for students:",
+            "number": 8
+          },
+          {
+            "comment": "Implements creative and stimulating lessons/activities that engage and challenge students:",
+            "number": 9
+          },
+          {
+            "comment": "Shows knowledge of the students' skills/proficiency:",
+            "number": 5
+          },
+          {
+            "comment": "Communicate with students clearly:",
+            "number": 4
+          },
+          {
+            "comment": "Manages student behavior effectively:",
+            "number": 2
+          },
+          {
+            "comment": "Works with colleagues effectively:",
+            "number": 6
+          },
+          {
+            "comment": "Demonstrates appropriate time management and organizational skills:",
+            "number": 9
+          },
+          {
+            "comment": "Demonstrates respect for all students:",
+            "number": 10
+          }
+        ]
+      }
+    },
+    {
+      "headerData": {
+        "name": "Rajat Castagneto"
+      },
+      "refInfo": {
+        "heading": "Reference Information & Questions",
+        "refereeTitle": "Director",
+        "refereeRole": "Supervisor",
+        "schoolName": "International School of Myanmar",
+        "candidateName": "Stephen Castagneto",
+        "workPeriod": "31 May 2017 - 30 Apr 2018",
+        "refereeEmail": "bryn.gabriel@ismyanmar.com",
+        "refereePhone": "05-9-43106744",
+        "dateofReference": "8 Jul 2021"
+      },
+      "withInClass": {
+        "heading": "Within the Classroom",
+        "description": "Stephen is the consummate professional. His work experience allows him to teach students in history with a very unique perspective. I have watched students enthralled with his storytelling of experiences he has had.",
+        "comments": [
+          {
+            "comment": "Exhibits knowledge of content/subject area:",
+            "number": 10
+          },
+          {
+            "comment": "Establishes a positive and productive learning environment for students:",
+            "number": 8
+          },
+          {
+            "comment": "Implements creative and stimulating lessons/activities that engage and challenge students:",
+            "number": 9
+          },
+          {
+            "comment": "Shows knowledge of the students' skills/proficiency:",
+            "number": 5
+          },
+          {
+            "comment": "Communicate with students clearly:",
+            "number": 4
+          },
+          {
+            "comment": "Manages student behavior effectively:",
+            "number": 2
+          },
+          {
+            "comment": "Works with colleagues effectively:",
+            "number": 6
+          },
+          {
+            "comment": "Demonstrates appropriate time management and organizational skills:",
+            "number": 9
+          },
+          {
+            "comment": "Demonstrates respect for all students:",
+            "number": 10
+          }
+        ]
+      },
+      "professional": {
+        "heading": "Within the Professional Community",
+        "comments": [
+          {
+            "comment": "Communicates effectively with colleagues:",
+            "number": 9
+          },
+          {
+            "comment": "Communicates effectively with administration:",
+            "number": 10
+          },
+          {
+            "comment": "Contributes to a collaborative and supportive working environment:",
+            "number": 10
+          },
+          {
+            "comment": "Supports school wide initiatives directly and indirectly:",
+            "number": 10
+          },
+          {
+            "comment": "Contributes to positive staff morale:",
+            "number": 10
+          },
+          {
+            "comment": "Meets deadlines:",
+            "number": 9
+          },
+          {
+            "comment": "Continues professional development:",
+            "number": 9
+          },
+          {
+            "comment": "Demonstrates leadership characteristics:",
+            "number": 4
+          }
+        ]
+      },
+      "teachings": {
+        "description": " Stephen is a true veteran teacher with knowledge. The transfer at times is not very differentiated and lecture style. We are a middle school and need him to truly engage our students with instructional practices.",
+        "comments": [
+          {
+            "comment": "Exhibits knowledge of content/subject area:",
+            "number": 10
+          },
+          {
+            "comment": "Establishes a positive and productive learning environment for students:",
+            "number": 8
+          },
+          {
+            "comment": "Implements creative and stimulating lessons/activities that engage and challenge students:",
+            "number": 9
+          },
+          {
+            "comment": "Shows knowledge of the students' skills/proficiency:",
+            "number": 5
+          },
+          {
+            "comment": "Communicate with students clearly:",
+            "number": 4
+          },
+          {
+            "comment": "Manages student behavior effectively:",
+            "number": 2
+          },
+          {
+            "comment": "Works with colleagues effectively:",
+            "number": 6
+          },
+          {
+            "comment": "Demonstrates appropriate time management and organizational skills:",
+            "number": 9
+          },
+          {
+            "comment": "Demonstrates respect for all students:",
+            "number": 10
+          }
+        ]
+      }
+    }
+  ]
+}

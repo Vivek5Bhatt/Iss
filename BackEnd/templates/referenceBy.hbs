@@ -1,0 +1,695 @@
+</>
+{{#each referenceBy}}
+<div class="wrapper referenceby">
+    <div class="header-main ">
+        <div class="cstm-container">
+            <div class="bg-gradient"></div>
+            <div class="header-box header-box-fixed">
+                <div class="row align-items-center">
+                    {{! start header name }}
+                    <div class="col box1">
+                        <div class="title-box">
+                            <h3 class="titlebx secondary-color fw-500 fs-20 secondary-font">
+                                Reference By {{this.headerData.name}}
+                            </h3>
+                        </div>
+                    </div>
+                    {{! end header name }}
+                    <div class="col box2">
+                        <div className="logoright" style="max-width: 200px;">
+                            <img src="{{logo "logo.png"}}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="innerbody-page">
+                {{! start reference information and questions }}
+                {{#if (isObject this.refInfo) }}
+                <div class="cardbx-main">
+                    {{! start reference information }}
+                    <div class="innercardbx-body">
+                        <div class="table-cardbox">
+                            <div class="table-title secondary-bgcolor">
+                                <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                    Reference Information
+                                </h3>
+                            </div>
+                            <div class="cardbody-bxx">
+                                <div class="info-bx">
+                                    <div class="row ">
+                                        {{#convertObjtoArr this.refInfo}}
+                                        <div class="col-md-6">
+                                            <div class="infocard-upper cstm-row">
+                                                <span class="label-name titlebx fs-12 secondary-color fw-400">
+                                                    {{checkQuestionType key}}
+                                                </span>
+                                                <span class="desc-name titlebx fs-12 secondary-color fw-500">
+                                                    {{checkStringType value}}
+                                                </span>
+                                            </div>
+                                        </div>
+                                        {{/convertObjtoArr}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{! end reference information }}
+                    <div class="footer-totalcount pb-15">
+                        <div class="countbox table-cardbox">
+                            <ul class="count-listing">
+                                <li>
+                                    <div class="count-inner">
+                                        <span class="count-num">1-3 = </span>
+                                        <span class="count-name light-green-color">Average </span>
+                                        <span class="count-num">( &gt;50% )</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="count-inner">
+                                        <span class="count-num">4-5 = </span>
+                                        <span class="count-name dark-green-color">Good </span>
+                                        <span class="count-num">( Top 50% )</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="count-inner">
+                                        <span class="count-num">6-7 = </span>
+                                        <span class="count-name see-green-color">Very Good </span>
+                                        <span class="count-num">( Top 25% )</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="count-inner">
+                                        <span class="count-num">8-9 = </span>
+                                        <span class="count-name blue-color">Excellent</span>
+                                        <span class="count-num">( Top 10% )</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="count-inner">
+                                        <span class="count-num">10 = </span>
+                                        <span class="count-name purple-color">Outstanding</span>
+                                        <span class="count-num">( Top 2% )</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    {{! start reference questions }}
+                    {{#if (isObject this.refInfo.questions.length) }}
+                    <div class="innercardbx-body">
+                        <div class="table-cardbox">
+                            <div class="table-title secondary-bgcolor">
+                                <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                    Reference Questions
+                                </h3>
+                            </div>
+                            <div class="cardbody-bxx">
+                                {{#each this.refInfo.questions}}
+                                <div class="innercard-detail refernce-outerbx pt-10">
+                                    <div class="innercard-detail-bx">
+                                        <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey">
+                                            {{question}}
+                                        </div>
+                                        <p class="subtitle fs-12 fw-400 secondary-color text-break">{{answer}}</p>
+                                    </div>
+                                </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{! end reference questions }}
+                </div>
+                {{/if}}
+                {{! end reference information and questions }}
+                {{! start with in class }}
+                {{#if (isObject this.withInClass) }}
+                <div class="cardbx-main pt-15">
+                    {{!-- <div class="innercardbx-body"> --}}
+                        <div class="table-cardbox">
+                            <div class="table-title secondary-bgcolor">
+                                <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                    With In Class
+                                </h3>
+                            </div>
+                            <div class="cardbody-bxx">
+                                {{#if withInClass.description}}
+                                <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                    <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                        COMMENTS
+                                    </div>
+                                    <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                        {{withInClass.description}}
+                                    </p>
+                                </div>
+                                {{/if}}
+                                {{#if withInClass.comments.length}}
+                                <div class="learning-tablebx">
+                                    <table class="table cstm-tablebx table-borderbx">
+                                        <tbody>
+                                            {{#each withInClass.comments}}
+                                            <tr>
+                                                <td class="w-50">{{this.comment}}</td>
+                                                <td>
+                                                    <div class="progressbar">
+                                                        <span class="{{progress-linebar this.score}}"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="value-td text-break">{{this.score}}</td>
+                                            </tr>
+                                            {{/each}}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                {{/if}}
+                            </div>
+                        </div>
+                    {{!-- </div> --}}
+                </div>
+                {{/if}}
+                {{! end with in class }}
+                {{! start child protection }}
+                {{#if (isObject this.childProtection) }}
+                <div class="cardbx-main pt-15">
+                    <div class="innercardbx-body">
+                        <div class="table-cardbox">
+                            <div class="table-title secondary-bgcolor">
+                                <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                    Child Protection
+                                </h3>
+                            </div>
+                            <div class="cardbody-bxx">
+                                {{#if childProtection.description}}
+                                <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                    <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                        COMMENTS
+                                    </div>
+                                    <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                        {{childProtection.description}}
+                                    </p>
+                                </div>
+                                {{/if}}
+                                {{#if childProtection.comments.length}}
+                                <div class="learning-tablebx">
+                                    <table class="table cstm-tablebx table-borderbx">
+                                        <tbody>
+                                            {{#each childProtection.comments}}
+                                            <tr>
+                                                <td class="w-50">{{this.comment}}</td>
+                                                <td>
+                                                    <div class="progressbar">
+                                                        <span class="{{progress-linebar this.score}}"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="value-td text-break">{{this.score}}</td>
+                                            </tr>
+                                            {{/each}}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end child protection }}
+                {{! start screening questions }}
+                {{#if (isObject this.screeningQuestions) }}
+                <div class="cardbx-main pt-15">
+                    <div class="innercardbx-body">
+                        <div class="table-cardbox">
+                            <div class="table-title secondary-bgcolor">
+                                <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                    Screening Questions
+                                </h3>
+                            </div>
+                            <div class="cardbody-bxx">
+                                {{#if screeningQuestions.description}}
+                                <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                    <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                        COMMENTS
+                                    </div>
+                                    <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                        {{screeningQuestions.description}}
+                                    </p>
+                                </div>
+                                {{/if}}
+                                {{#if screeningQuestions.comments.length}}
+                                <div class="learning-tablebx">
+                                    <table class="table cstm-tablebx table-borderbx">
+                                        <tbody>
+                                            {{#each screeningQuestions.comments}}
+                                            <tr>
+                                                <td class="w-50">{{this.comment}}</td>
+                                                <td>
+                                                    <div class="progressbar">
+                                                        <span class="{{progress-linebar this.score}}"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="value-td text-break">{{this.score}}
+                                                </td>
+                                            </tr>
+                                            {{/each}}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end screening questions }}
+                {{! start competencies questions }}
+                {{#if (isObject this.competenciesQuestions) }}
+                <div class="cardbx-main pt-15">
+                    <div class="innercardbx-body">
+                        <div class="table-cardbox">
+                            <div class="table-title secondary-bgcolor">
+                                <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                    Competencies Questions
+                                </h3>
+                            </div>
+                            <div class="cardbody-bxx">
+                                {{#if competenciesQuestions.description}}
+                                <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                    <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                        COMMENTS
+                                    </div>
+                                    <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                        {{competenciesQuestions.description}}
+                                    </p>
+                                </div>
+                                {{/if}}
+                                {{#if competenciesQuestions.comments.length}}
+                                <div class="learning-tablebx">
+                                    <table class="table cstm-tablebx table-borderbx">
+                                        <tbody>
+                                            {{#each competenciesQuestions.comments}}
+                                            <tr>
+                                                <td class="w-50">{{this.comment}}</td>
+                                                <td>
+                                                    <div class="progressbar">
+                                                        <span class="{{progress-linebar this.score}}"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="value-td text-break">{{this.score}}</td>
+                                            </tr>
+                                            {{/each}}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end competencies questions }}
+                {{! start competencies }}
+                {{#if (isObject this.competencies) }}
+                <div class="cardbx-main pt-15">
+                    <div class="table-cardbox">
+                        <div class="table-title secondary-bgcolor">
+                            <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                Competencies
+                            </h3>
+                        </div>
+                        <div class="cardbody-bxx">
+                            {{#if competencies.description}}
+                                <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                    <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                        COMMENTS
+                                    </div>
+                                    <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                        {{competencies.description}}
+                                    </p>
+                                </div>
+                            {{/if}}
+                            {{#if competencies.comments.length}}
+                            <div class="learning-tablebx">
+                                <table class="table cstm-tablebx table-borderbx">
+                                    <tbody>
+                                        {{#each competencies.comments}}
+                                        <tr>
+                                            <td class="w-50">{{this.comment}}</td>
+                                            <td>
+                                                <div class="progressbar">
+                                                    <span class="{{progress-linebar this.score}}"></span>
+                                                </div>
+                                            </td>
+                                            </td>
+                                            <td class="value-td text-break">{{this.score}}
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end competencies }}
+                {{! start teachings }}
+                {{#if (isObject this.teachings) }}
+                <div class="cardbx-main pt-15">
+                    <div class="table-cardbox">
+                        <div class="table-title secondary-bgcolor">
+                            <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                Teaching
+                            </h3>
+                        </div>
+                        <div class="cardbody-bxx">
+                            {{#if teachings.description}}
+                            <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                    COMMENTS
+                                </div>
+                                <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                    {{teachings.description}}
+                                </p>
+                            </div>
+                            {{/if}}
+                            {{#if teachings.comments.length}}
+                            <div class="learning-tablebx">
+                                <table class="table cstm-tablebx table-borderbx">
+                                    <tbody>
+                                        {{#each teachings.comments}}
+                                        <tr>
+                                            <td class="w-50">{{this.comment}}</td>
+                                            <td>
+                                                <div class="progressbar">
+                                                    <span class="{{progress-linebar this.score}}"></span>
+                                                </div>
+                                            </td>
+                                            <td class="value-td text-break">{{this.score}}</td>
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end teachings }}
+                {{! start teaching and learning }}
+                {{#if (isObject this.teachingAndLearning) }}
+                <div class="cardbx-main pt-15">
+                    <div class="table-cardbox">
+                        <div class="table-title secondary-bgcolor">
+                            <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                Teaching and Learning
+                            </h3>
+                        </div>
+                        <div class="cardbody-bxx">
+                            {{#if teachingAndLearning.description}}
+                            <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                    COMMENTS
+                                </div>
+                                <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                    {{teachingAndLearning.description}}
+                                </p>
+                            </div>
+                            {{/if}}
+                            {{#if teachingAndLearning.comments.length}}
+                            <div class="learning-tablebx">
+                                <table class="table cstm-tablebx table-borderbx">
+                                    <tbody>
+                                        {{#each teachingAndLearning.comments}}
+                                        <tr>
+                                            <td class="w-50">{{this.comment}}</td>
+                                            <td>
+                                                <div class="progressbar">
+                                                    <span class="{{progress-linebar this.score}}"></span>
+                                                </div>
+                                            </td>
+                                            <td class="value-td text-break">{{this.score}}</td>
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end teaching and learning }}
+                {{! start beyond Class }}
+                {{#if (isObject this.beyondClass) }}
+                <div class="cardbx-main pt-15">
+                    <div class="table-cardbox">
+                        <div class="table-title secondary-bgcolor">
+                            <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                Beyond Class
+                            </h3>
+                        </div>
+                        <div class="cardbody-bxx">
+                            {{#if beyondClass.description}}
+                            <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                    COMMENTS
+                                </div>
+                                <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                    {{beyondClass.description}}
+                                </p>
+                            </div>
+                            {{/if}}
+                            {{#if beyondClass.comments.length}}
+                            <div class="learning-tablebx">
+                                <table class="table cstm-tablebx table-borderbx">
+                                    <tbody>
+                                        {{#each beyondClass.comments}}
+                                        <tr>
+                                            <td class="w-50">{{this.comment}}</td>
+                                            <td>
+                                                <div class="progressbar">
+                                                    <span class="{{progress-linebar this.score}}"></span>
+                                                </div>
+                                            </td>
+                                            <td class="value-td text-break">{{this.score}}</td>
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end beyond Class }}
+                {{! start professional community }}
+                {{#if (isObject this.professional) }}
+                <div class="cardbx-main pt-15">
+                    <div class="table-cardbox">
+                        <div class="table-title secondary-bgcolor">
+                            <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                Professional Community
+                            </h3>
+                        </div>
+                        <div class="cardbody-bxx">
+                            {{#if professional.description}}
+                            <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                    COMMENTS
+                                </div>
+                                <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                    {{professional.description}}
+                                </p>
+                            </div>
+                            {{/if}}
+                            {{#if professional.comments.length}}
+                            <div class="learning-tablebx">
+                                <table class="table cstm-tablebx table-borderbx">
+                                    <tbody>
+                                        {{#each professional.comments}}
+                                        <tr>
+                                            <td class="w-50">{{this.comment}}</td>
+                                            <td>
+                                                <div class="progressbar">
+                                                    <span class="{{progress-linebar this.score}}"></span>
+                                                </div>
+                                            </td>
+                                            <td class="value-td text-break">{{this.score}}</td>
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end professional community }}
+                {{! start professionalism }}
+                {{#if (isObject this.professional) }}
+                <div class="cardbx-main pt-15">
+                    <div class="table-cardbox">
+                        <div class="table-title secondary-bgcolor">
+                            <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                Professionalism
+                            </h3>
+                        </div>
+                        <div class="cardbody-bxx">
+                            {{#if professionalism.description}}
+                            <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                    COMMENTS
+                                </div>
+                                <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                    {{professionalism.description}}
+                                </p>
+                            </div>
+                            {{/if}}
+                            {{#if professionalism.comments.length}}
+                            <div class="learning-tablebx">
+                                <table class="table cstm-tablebx table-borderbx">
+                                    <tbody>
+                                        {{#each professionalism.comments}}
+                                        <tr>
+                                            <td class="w-50">{{this.comment}}</td>
+                                            <td>
+                                                <div class="progressbar">
+                                                    <span class="{{progress-linebar this.score}}"></span>
+                                                </div>
+                                            </td>
+                                            <td class="value-td text-break">{{this.score}}</td>
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end professionalism }}
+                {{! start leadership }}
+                {{#if (isObject this.professional) }}
+                <div class="cardbx-main pt-15">
+                    <div class="table-cardbox">
+                        <div class="table-title secondary-bgcolor">
+                            <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                Leadership
+                            </h3>
+                        </div>
+                        <div class="cardbody-bxx">
+                            {{#if leadership.description}}
+                            <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                    COMMENTS
+                                </div>
+                                <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                    {{leadership.description}}
+                                </p>
+                            </div>
+                            {{/if}}
+                            {{#if leadership.comments.length}}
+                            <div class="learning-tablebx">
+                                <table class="table cstm-tablebx table-borderbx">
+                                    <tbody>
+                                        {{#each leadership.comments}}
+                                        <tr>
+                                            <td class="w-50">{{this.comment}}</td>
+                                            <td>
+                                                <div class="progressbar">
+                                                    <span class="{{progress-linebar this.score}}"></span>
+                                                </div>
+                                            </td>
+                                            <td class="value-td text-break">{{this.score}}</td>
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end leadership }}
+                {{! start contributions }}
+                {{#if (isObject this.professional) }}
+                <div class="cardbx-main pt-15">
+                    <div class="table-cardbox">
+                        <div class="table-title secondary-bgcolor">
+                            <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                Contributions
+                            </h3>
+                        </div>
+                        <div class="cardbody-bxx">
+                            {{#if contributions.description}}
+                            <div class="innercard-detail refernce-outerbx innercard-detail-bx">
+                                <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                    COMMENTS
+                                </div>
+                                <p class="subtitle fs-12 fw-400 secondary-color text-break">
+                                    {{contributions.description}}
+                                </p>
+                            </div>
+                            {{/if}}
+                            {{#if contributions.comments.length}}
+                            <div class="learning-tablebx">
+                                <table class="table cstm-tablebx table-borderbx">
+                                    <tbody>
+                                        {{#each contributions.comments}}
+                                        <tr>
+                                            <td class="w-50">{{this.comment}}</td>
+                                            <td>
+                                                <div class="progressbar">
+                                                    <span class="{{progress-linebar this.score}}"></span>
+                                                </div>
+                                            </td>
+                                            <td class="value-td text-break">{{this.score}}</td>
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end contributions }}
+                {{! start general }}
+                {{#if (isObject this.general) }}
+                <div class="cardbx-main general-cardbx pt-15">
+                    <div class="table-cardbox">
+                        <div class="table-title secondary-bgcolor">
+                            <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                                General
+                            </h3>
+                        </div>
+                        <div class="cardbody-bxx">
+                            {{#eachInMap this.general}}
+                            <div class="innercard-detail-bx">
+                                <div class="titlebx fs-12 fw-500 grey-color boder-bottom-grey boder-dark">
+                                    {{convertKeyName key}}
+                                </div>
+                                <p class="subtitle fs-12 fw-400 secondary-color text-break text-break">
+                                    {{value}}
+                                </p>
+                            </div>
+                            {{/eachInMap}}
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{! end general }}
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+</>

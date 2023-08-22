@@ -1,0 +1,339 @@
+<div class="wrapper personal-info">
+  <div class="header-main">
+    <div class="cstm-container">
+      <div class="bg-gradient"></div>
+      <div class="header-box">
+        <div class="row">
+          <div class="col box1">
+            {{! start header data }}
+            <div class="title-box">
+              <h2 class="titlebx secondary-color fw-700 secondary-font fs-27">
+                {{headerData.name}}
+              </h2>
+              <ul class="header-listing">
+                <li>
+                  <div class="list-main">
+                    <span class="label-tex secondary-color fw-400 fs-12">
+                      Primary Email:
+                    </span>
+                    <strong class="detail-tex secondary-color fw-700 fs-12">
+                      {{headerData.email}}
+                    </strong>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-main">
+                    <span class="label-tex secondary-color fw-400 fs-12">
+                      Primary Phone:
+                    </span>
+                    <strong class="detail-tex secondary-color fw-700 fs-12">
+                      {{headerData.phone}}
+                    </strong>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            {{! end header data }}
+          </div>
+          <div className="col box2">
+            <div className="logoright" style="max-width: 200px;">
+              <img src="{{logo 'logo.png'}}" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="innerbody-page">
+        {{! start position sought }}
+        {{#if positionData}}
+          <div class="table-cardbox-outer">
+            <div class="table-innercard">
+              <div class="table-cardbox">
+                <div class="table-title primary-bgcolor">
+                  <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                    Positions Sought
+                  </h3>
+                </div>
+                <div class="table-body">
+                  <table class="table cstm-tablebx">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="w-44">
+                          DEPARTMENT
+                        </th>
+                        <th scope="col" class="w-44">
+                          SUBJECT
+                        </th>
+                        <th scope="col" class="w-100x">
+                          GRADE
+                        </th>
+                        {{! <th scope="col" class="w-100x">
+                          YEARS
+                        </th> }}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {{#each positionData.positions}}
+                        <tr>
+                          <td>{{this.department}} </td>
+                          <td>{{this.subject}}</td>
+                          <td class="text-center">{{this.grade}}</td>
+                          {{!-- <td>{{this.years}}</td> --}}
+                        </tr>
+                      {{/each}}
+                    </tbody>
+                  </table>
+                </div>
+                <div class="innercard-detail">
+                  <div class="row">
+                    {{! start experience data }}
+                    {{#if positionData.experience}}
+                      <div class="col-md-12">
+                        <div class="innercard-detail-bx">
+                          <div
+                            class="titlebx fs-12 fw-700 grey-color boder-bottom-grey"
+                          >
+                            Experience
+                          </div>
+                          <p class="subtitle fs-12 fw-700 secondary-color">
+                            {{positionData.experience}}
+                          </p>
+                        </div>
+                      </div>
+                    {{/if}}
+                    {{! end experience data }}
+                    {{! start date }}
+                    {{#if positionData.date}}
+                      <div class="col-md-12">
+                        <div class="innercard-detail-bx">
+                          <div
+                            class="titlebx fs-12 fw-700 grey-color boder-bottom-grey"
+                          >
+                            Date
+                          </div>
+                          <p class="subtitle fs-12 fw-700 secondary-color">
+                            {{positionData.date}}
+                          </p>
+                        </div>
+                      </div>
+                    {{/if}}
+                    {{! end date }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{/if}}
+        {{! end position sought }}
+        {{! start basic and contact information }}
+        <div class="cardbx-main">
+          <div class="row">
+            {{! start basic information }}
+            {{#if basicInfo}}
+              <div class="col-md-8">
+                <div class="innercardbx-body h-100">
+                  <div class="table-cardbox h-100">
+                    <div class="table-title primary-bgcolor">
+                      <h3
+                        class="titlebx fs-14 white-color fw-600 secondary-font"
+                      >
+                        Basic Information
+                      </h3>
+                    </div>
+                    <div class="cardbody-bxx">
+                      <div class="info-bx">
+                        <div class="row">
+                          {{#convertObjtoArr basicInfo}}
+                            <div class="col-md-6">
+                              <div class="infocard-upper cstm-row">
+                                <span
+                                  class="label-name titlebx fs-12 secondary-color fw-400"
+                                >
+                                  {{convertKeyName key}}:
+                                </span>
+                                <span
+                                  class="desc-name titlebx fs-12 secondary-color fw-700"
+                                >
+                                  {{value}}
+                                </span>
+                              </div>
+                            </div>
+                          {{/convertObjtoArr}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/if}}
+            {{! end basic information }}
+            {{! start contact information }}
+            {{#if contactDetails}}
+              <div class="col-md-4">
+                <div class="innercardbx-body h-100">
+                  <div class="table-cardbox h-100">
+                    <div class="table-title primary-bgcolor">
+                      <h3
+                        class="titlebx fs-14 white-color fw-600 secondary-font"
+                      >
+                        Contact Details
+                      </h3>
+                    </div>
+                    <div class="cardbody-bxx">
+                      {{#eachInMap contactDetails}}
+                        <div class="innercard-detail-bx">
+                          <div
+                            class="titlebx fs-12 fw-700 grey-color boder-bottom-grey"
+                          >
+                            {{convertKeyName key}}
+                          </div>
+                          <p class="subtitle fs-12 fw-700 secondary-color">
+                            {{value}}
+                          </p>
+                        </div>
+                      {{/eachInMap}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/if}}
+            {{! end contact information }}
+          </div>
+        </div>
+        {{! end basic and contact information }}
+        {{! start education }}
+        {{#if education}}
+          <div class="education-card">
+            <div class="table-cardbox">
+              <div class="table-title primary-bgcolor">
+                <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                  Education
+                </h3>
+              </div>
+              <div class="cardbody-bxx">
+                {{#each education}}
+                  <div class="edu-innercard-bx">
+                    <div class="cardgreybx">
+                      <div class="row">
+                        {{#convertObjtoArr this}}
+                          <div class="col-md-6">
+                            <div class="infocard-upper cstm-row">
+                              <span
+                                class="label-name titlebx fs-12 secondary-color fw-400"
+                              >
+                                {{convertKeyName key}}:
+                              </span>
+                              <span
+                                class="desc-name titlebx fs-12 secondary-color fw-700"
+                              >
+                                {{value}}
+                              </span>
+                            </div>
+                          </div>
+                        {{/convertObjtoArr}}
+                      </div>
+                    </div>
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        {{/if}}
+        {{! end education }}
+        {{! start certifications }}
+        {{#if certification}}
+          <div class="education-card pt-15">
+            <div class="table-cardbox">
+              <div class="table-title primary-bgcolor">
+                <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                  Registration / Certification
+                </h3>
+              </div>
+              <div class="cardbody-bxx">
+                {{#each certification}}
+                  <div class="edu-innercard-bx smlcard-bx">
+                    <div class="education-card cardgreybx">
+                      <div class="row">
+                        {{#convertObjtoArr this}}
+                          <div class="col-md-6">
+                            <div class="infocard-upper cstm-row">
+                              <span
+                                class="label-name titlebx fs-12 secondary-color fw-400"
+                              >
+                                {{convertKeyName key}}:
+                              </span>
+                              <span
+                                class="desc-name titlebx fs-12 secondary-color fw-700"
+                              >
+                                {{value}}
+                              </span>
+                            </div>
+                          </div>
+                        {{/convertObjtoArr}}
+                      </div>
+                    </div>
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        {{/if}}
+        {{! end certifications }}
+        {{! start carriers }}
+        {{#if carrier}}
+          <div class="education-card pt-15">
+            <div class="table-cardbox">
+              <div class="table-title primary-bgcolor">
+                <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                  Careers
+                </h3>
+              </div>
+              <div class="cardbody-bxx">
+                {{#each this.carrier}}
+                  <div class="edu-innercard-bx smlcard-bx">
+                    <div class="cardgreybx">
+                      <div class="row">
+                        {{#convertObjtoArr this}}
+                          <div class="col-md-6">
+                            <div class="infocard-upper cstm-row">
+                              <span
+                                class="label-name titlebx fs-12 secondary-color fw-400"
+                              >
+                                {{convertKeyName key}}:
+                              </span>
+                              <span
+                                class="desc-name titlebx fs-12 secondary-color fw-700"
+                              >
+                                {{value}}
+                              </span>
+                            </div>
+                          </div>
+                        {{/convertObjtoArr}}
+                      </div>
+                    </div>
+                    {{!-- {{#if this.additional}}
+                      <div class="card-footerbx">
+                        <div class="card-footer-iiner">
+                          <h4
+                            class="desc-name titlebx fs-12 secondary-color fw-700"
+                          >
+                            Additional Responsibilities:
+                          </h4>
+                          <p
+                            class="label-name titlebx fs-12 secondary-color fw-400"
+                          >
+                            {{this.additional}}
+                          </p>
+                        </div>
+                      </div>
+                    {{/if}} --}}
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        {{/if}}
+        {{! end carriers }}
+      </div>
+    </div>
+  </div>
+</div>

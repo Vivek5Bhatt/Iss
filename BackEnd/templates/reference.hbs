@@ -1,0 +1,81 @@
+<div class="wrapper reference">
+  <div class="header-main">
+    <div class="cstm-container">
+      <div class="bg-gradient"></div>
+      <div class="header-box">
+        <div class="row">
+          <div class="col box1">
+            {{! start header data }}
+            <div class="title-box">
+              <h2 class="titlebx secondary-color fw-700 secondary-font fs-27">
+                {{headerData.name}}
+              </h2>
+              <ul class="header-listing">
+                <li>
+                  <div class="list-main">
+                    <span class="label-tex secondary-color fw-400 fs-12">
+                      Primary Email:
+                    </span>
+                    <strong class="detail-tex secondary-color fw-700 fs-12">
+                      {{headerData.email}}
+                    </strong>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-main">
+                    <span class="label-tex secondary-color fw-400 fs-12">
+                      Primary Phone:
+                    </span>
+                    <strong class="detail-tex secondary-color fw-700 fs-12">
+                      {{headerData.phone}}
+                    </strong>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            {{! end header data }}
+          </div>
+          <div className="col box2">
+            <div className="logoright" style="max-width: 200px;">
+              <img src="{{logo 'logo.png'}}" />
+            </div>
+          </div>
+        </div>
+      </div>
+      {{! start reference data }}
+      <div class="innerbody-page reference-cardbx row">
+        {{#each ref}}
+          <div class="col-md-6 pt-15 education-card">
+            <div class="table-cardbox h-100">
+              <div class="table-title primary-bgcolor">
+                <h3 class="titlebx fs-14 white-color fw-600 secondary-font">
+                  Reference
+                  {{inc @index}}
+                </h3>
+              </div>
+              <div class="cardbody-bxx">
+                <div class="edu-innercard-bx">
+                  <div class="education-card">
+                    {{#eachInMap this}}
+                      <div class="infocard-upper cstm-row">
+                        <span
+                          class="label-name titlebx fs-12 secondary-color fw-400"
+                        > {{convertKeyName key}}: </span>
+                        <span
+                          class="desc-name titlebx fs-12 secondary-color fw-700"
+                        >
+                          {{value}}
+                        </span>
+                      </div>
+                    {{/eachInMap}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+      {{! end reference data }}
+    </div>
+  </div>
+</div>
